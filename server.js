@@ -4,6 +4,7 @@ import products from "./products.js";
 const port = 5000;
 
 const app = express();
+app.enable("trust proxy");
 
 app.get("/", (req, res) => {
   // console.log(req.ip);
