@@ -8,7 +8,7 @@ const app = express();
 app.get("/", (req, res) => {
   // console.log(req.ip);
   // console.log("test log");
-  res.send(`API is running..., your IP is ${req.ip}`);
+  res.send(`<h1>API is running..., your IP is ${req.ip}</h1>`);
 });
 
 app.get("/api/products", (req, res) => {
