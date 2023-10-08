@@ -6,7 +6,9 @@ const port = 5000;
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("API is running...");
+  // console.log(req.ip);
+  // console.log("test log");
+  res.send(`API is running..., your IP is ${req.ip}`);
 });
 
 app.get("/api/products", (req, res) => {
